@@ -15,7 +15,7 @@ const useMovieTrailer = (vidId) => {
     const FilterData = json.results.filter((video) => video.type === "Trailer");
 
     const trailer = FilterData.length ? FilterData[0] : json.results[0];
-   
+
     dispatch(addTrailerVideo(trailer));
   };
 
